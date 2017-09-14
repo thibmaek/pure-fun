@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/thibmaek/pure-fun/issues"
   },
-  "homepage": "https://github.com/thibmaek/pure-fun#readme"
+  "homepage": "https://github.com/thibmaek/pure-fun#readme",
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-devine": "^1.7.1"
+  }
 }
