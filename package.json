@@ -1,0 +1,25 @@
+{
+  "name": "pure-fun",
+  "version": "1.0.0",
+  "description": "A collection of pure functions/helpers with 0 dependencies",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibmaek/pure-fun.git"
+  },
+  "keywords": [
+    "pure",
+    "functions",
+    "fp",
+    "helper",
+    "util",
+    "pure-functions"
+  ],
+  "author": "Thibault Maekelbergh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thibmaek/pure-fun/issues"
+  },
+  "homepage": "https://github.com/thibmaek/pure-fun#readme"
+}
