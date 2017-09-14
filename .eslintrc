@@ -1,0 +1,7 @@
+{
+  "extends": "devine",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "babel/object-curly-spacing": ["error", "always"],
+  }
+}
