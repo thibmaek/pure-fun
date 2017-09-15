@@ -24,6 +24,7 @@
   "homepage": "https://github.com/thibmaek/pure-fun#readme",
   "devDependencies": {
     "eslint": "^4.6.1",
-    "eslint-config-devine": "^1.7.1"
+    "eslint-config-devine": "^1.7.1",
+    "jest": "^21.1.0"
   }
 }
