@@ -1,6 +1,6 @@
 /**
  * Check if date needs to be typecasted
- * @param {Any} date [A date like value]
- * @return {Object<Date>} - Original input if correct type, or parsed date if incorrect type
-**/
-module.exports = date => isDate(date) ? input : Date.parse(date);
+ * @param  {Any} date An Object<Date> or date-like type (e.g: String "29-10-1995")
+ * @return {Object<Date>} If check is true: the original param, if failed: a parsed date
+ */
+export default date => isDate(date) ? date : Date.parse(date);

@@ -1,6 +1,6 @@
 /**
- * Create an iterable from Map<Object>
- * @param {Object<Any>} obj [An object of other types]
- * @return {Map<Array>}
-**/
-module.exports = obj => [...new Map(Object.entries(obj))];
+ * Create an iterable key-value array from an Object
+ * @param  {Object} obj Any form of Object
+ * @return {Array<Map>} Iterable array containing a Map dict from the object's properties
+ */
+export default obj => [...new Map(Object.entries(obj))];

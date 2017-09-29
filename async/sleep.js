@@ -1,6 +1,6 @@
 /**
  * Sleep an amount of seconds before executing the next call
- * @param {Int}     ms [an amount of miliseconds to sleep]
- * @return {Promise} - [A resolved promise after specified time]
+ * @param  {Int} ms amount (in miliseconds) to sleep
+ * @return {Promise} a fullfilled promise after the amount of ms passed
  */
-module.exports = (ms) => new Promise(res => setTimeout(res, ms));
+export default ms => new Promise(resolve => setTimeout(resolve, ms));
