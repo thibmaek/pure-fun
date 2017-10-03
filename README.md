@@ -1,4 +1,4 @@
-# Pure-Fun
+# pure-fun
 😊  A collection of JavaScript pure functions/helpers with zero dependencies.
 
 Currently ESM support only, use Babel or @std/esm (node v8+) for Node.
