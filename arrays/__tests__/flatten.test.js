@@ -1,4 +1,4 @@
-const flatten = require(`../flatten`);
+import flatten from '../flatten';
 
 const multiDimensionalArray = [1, [2, [3]]];
 
