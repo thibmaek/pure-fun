@@ -3,6 +3,8 @@
 
 Currently ESM support only, use Babel or @std/esm (node v8+) for Node.
 
+[![Build Status](https://travis-ci.org/thibmaek/pure-fun.svg?branch=master)](https://travis-ci.org/thibmaek/pure-fun)
+
 ## Installing
 
 ```
