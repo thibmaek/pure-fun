@@ -5,6 +5,6 @@
  * @return {Array<Any>} a reshuffled array, optionally trimmed
  */
 export default (arr, limit = 0) => [
-  ...arr.sort((a, b) => parseInt(Math.random() * 10) % 2)
+  ...arr.sort(() => parseInt(Math.random() * 10) % 2)
     .slice(- limit),
 ];
