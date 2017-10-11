@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - stable
 
-script: npm run eslint .
+script: npm run eslint . npm run test
 
