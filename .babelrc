@@ -2,7 +2,13 @@
     "env": {
         "test": {
             "plugins": ["transform-runtime"],
-            "presets": ["es2015", "es2017"]
+            "presets": [
+	            ["env", {
+		            "targets": {
+		                "node": "current"
+		            }
+	            }],
+	        ]
         }
     }
 }
