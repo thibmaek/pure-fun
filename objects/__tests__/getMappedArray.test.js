@@ -10,17 +10,17 @@ function isIterable(obj) {
   return typeof obj[Symbol.iterator] === `function`;
 }
 
-describe(`getMappedArray`, () => {
+describe(`[Objects]: getMappedArray`, () => {
   it(`should return a iterable array of tuples from an input object`, () => {
     const originalObject = {
       one: 4,
       two: 5,
       three: 6,
     };
-    
+
     // mappedArray should equal [ [ 'one', 4 ], [ 'two', 5 ], [ 'three', 6 ] ]
     const mappedArray = getMappedArray(originalObject);
-    
+
     // Pulling the keys and values out of the object for checks
     const originalObjectKeys = Object.keys(originalObject);
     const originalObjectValues = Object.values(originalObject);
