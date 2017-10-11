@@ -13,7 +13,8 @@ describe(`[Async]: sleep`, () => {
       const hrEnd = process.hrtime(hrStart);
 
       expect(hrEnd[0]).toEqual(0);
-      expect(hrEnd[1]).toBeGreaterThan(500000000);
+      expect(hrEnd[1]).toBeLessThan(510000000);
+      expect(hrEnd[1]).toBeGreaterThan(499000000);
       done();
     });
   });
