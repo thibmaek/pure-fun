@@ -1,14 +1,10 @@
 {
-    "env": {
-        "test": {
-            "plugins": ["transform-runtime"],
-            "presets": [
-	            ["env", {
-		            "targets": {
-		                "node": "current"
-		            }
-	            }],
-	        ]
-        }
+  "env": {
+    "test": {
+      "plugins": ["transform-runtime"],
+      "presets": [
+        ["env", { "targets": { "node": "current" } }]
+      ]
     }
+  }
 }
