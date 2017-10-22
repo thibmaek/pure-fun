@@ -2,6 +2,7 @@ import filterFalsies from './filterFalsies';
 import flatten from './flatten';
 import pickRandom from './pickRandom';
 import randomize from './randomize';
+import unique from './unique';
 import zip from './zip';
 
 export default {
@@ -10,4 +11,5 @@ export default {
   pickRandom,
   randomize,
   zip,
+  unique,
 };
