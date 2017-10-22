@@ -1,3 +1,6 @@
 __tests__
+.github
+
 .babelrc
 .eslintrc
+.travis.yml
