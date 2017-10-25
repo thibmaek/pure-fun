@@ -4,6 +4,7 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
+    "release": "np",
     "test": "jest"
   },
   "repository": {
