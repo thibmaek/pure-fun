@@ -8,7 +8,7 @@ Currently ESM support only, use Babel or @std/esm (node v8+) for Node.
 ## Installing
 
 ```
-npm install (--save-dev) thibmaek/pure-fun
+npm install (--save-dev) pure-fun
 ```
 
 ## Usage
