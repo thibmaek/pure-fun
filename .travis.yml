@@ -1,9 +1,16 @@
 language: node_js
 node_js:
-  - lts/*
-
+- lts/*
 script: npm run test
-
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: npm
+  email: thibault.maekelbergh@icloud.com
+  api_key:
+    secure: T6gjOCwqGWBxymomgQ8Mqf2PS/+Ej5AvXYe7BV9me2aCz/lAZn47uuhF2NJyUkaP1+JqUs0TBZY2eElCs5RN2Aip2jjDkbpW/pTp3G0rPzJr4SzqXHONw7K8VgMRm8nBn+EZKRSSZ/xxf9qoFQ3SJbeIDftFJVPix4D6xQ7JGqk8ocmq2BJRS/XfmeN8pf6LgZQ7cWOYOC6aZedNV4ADh3NjWDwwCFQf8YrcHXz15p28tr3RoIXTxGdw/9RtH9lj617tVwMpqVorTfqivAI1dC37K29RbvdhOjBiXBfKAHywgvWji0MRbmMDu/M733LkwNkXf2mSWPEqORKUQRGk1wQgQCJ+GMDJLvdmJapmbv0LDti2TOz82MYPjJwYQeAf0VaJvumb6VNrbC5GLADMBbvD6N4obv+86yStx5XS2mNcXLbpdX0rvQPe+cQBaXbv+kRrFae2gVcaMLMCp5nTHPUj5+Bq4lMxXzkBFt1dzQ1C0j+iHEgFL+hI+cyRyzNXKW0XAz4jYfypkvnHjsUsGiwY1YT4GRY2zdHE8tIp9WIArqNca89NJ+Ul7P3t0st/E+QhwG1B0gHp21DUPVba71NvwR6ekLbt5BQmsZk1vbKvQhGgf94ZTije9WreOUCgmU9vnV0aWA1rFW1lvZVFNsBVUhikUvyFx3k6b/DKt7c=
+  on:
+    branch: master
+    repo: thibmaek/pure-fun
+  tag: next
