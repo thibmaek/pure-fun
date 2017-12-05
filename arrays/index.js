@@ -1,3 +1,4 @@
+import filterEven from './filterEven';
 import filterFalsies from './filterFalsies';
 import flatten from './flatten';
 import head from './head';
@@ -12,6 +13,7 @@ import without from './without';
 import zip from './zip';
 
 export default {
+  filterEven,
   filterFalsies,
   flatten,
   head,
