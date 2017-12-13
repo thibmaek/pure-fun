@@ -1,6 +1,7 @@
 import filterEven from './filterEven';
 import filterFalsies from './filterFalsies';
 import flatten from './flatten';
+import groupBy from './groupBy';
 import head from './head';
 import initial from './initial';
 import last from './last';
@@ -16,6 +17,7 @@ export default {
   filterEven,
   filterFalsies,
   flatten,
+  groupBy,
   head,
   initial,
   last,
