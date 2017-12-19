@@ -28,9 +28,9 @@
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
-    "eslint": "^4.6.1",
+    "eslint": "^4.13.1",
     "eslint-config-devine": "^1.7.1",
     "jest": "^21.1.0",
-    "np": "^2.16.0"
+    "np": "^2.18.3"
   }
 }
