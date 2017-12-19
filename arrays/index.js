@@ -5,8 +5,10 @@ import groupBy from './groupBy';
 import head from './head';
 import initial from './initial';
 import last from './last';
+import median from './median';
 import pickRandom from './pickRandom';
 import randomize from './randomize';
+import sortBy from './sortBy';
 import tail from './tail';
 import total from './total';
 import unique from './unique';
@@ -21,8 +23,10 @@ export default {
   head,
   initial,
   last,
+  median,
   pickRandom,
   randomize,
+  sortBy,
   tail,
   total,
   unique,
