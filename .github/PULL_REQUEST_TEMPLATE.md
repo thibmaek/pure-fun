@@ -5,6 +5,7 @@ Don't worry if you don't manage to write one. Contribution is still appreciated
 - [ ] only uses ES module syntax
 - [ ] has a valid JSDoc comment
 - [ ] has a unit test in a subfolder like: `__tests__/function.test.js`
+- [ ] is exported in its folder's entrypoint (`e.g: arrays/index.js`)
 
 ## My changes …
 - [ ] still make the current tests pass with `npm test`
