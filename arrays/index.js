@@ -4,6 +4,7 @@ import flatten from './flatten';
 import groupBy from './groupBy';
 import head from './head';
 import initial from './initial';
+import isEmpty from './isEmpty';
 import last from './last';
 import median from './median';
 import pickRandom from './pickRandom';
@@ -16,12 +17,14 @@ import without from './without';
 import zip from './zip';
 
 export default {
+  empty: isEmpty,
   filterEven,
   filterFalsies,
   flatten,
   groupBy,
   head,
   initial,
+  isEmpty,
   last,
   median,
   pickRandom,
