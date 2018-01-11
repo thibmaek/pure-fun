@@ -4,6 +4,9 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
+    "guard": "npm run lint && npm test",
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint ./",
     "release": "np",
     "test": "jest"
   },
@@ -30,7 +33,14 @@
     "babel-preset-env": "^1.6.0",
     "eslint": "^4.13.1",
     "eslint-config-devine": "^1.7.1",
+    "husky": "^0.15.0-beta.16",
     "jest": "^21.1.0",
     "np": "^2.18.3"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "npm run guard",
+      "prepush": "npm test"
+    }
   }
 }
