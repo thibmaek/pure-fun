@@ -1,10 +1,13 @@
+import diff from './diff';
 import filterEven from './filterEven';
 import filterFalsies from './filterFalsies';
 import flatten from './flatten';
 import groupBy from './groupBy';
 import head from './head';
 import initial from './initial';
+import intersect from './intersect';
 import isEmpty from './isEmpty';
+import join from './join';
 import last from './last';
 import median from './median';
 import pickRandom from './pickRandom';
@@ -17,6 +20,8 @@ import without from './without';
 import zip from './zip';
 
 export default {
+  diff,
+  difference: diff,
   empty: isEmpty,
   filterEven,
   filterFalsies,
@@ -24,7 +29,10 @@ export default {
   groupBy,
   head,
   initial,
+  intersect,
+  intersection: intersect,
   isEmpty,
+  join,
   last,
   median,
   pickRandom,
