@@ -4,8 +4,11 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
+    "build": "flow-remove-types src/ -d esm/ && npm run lint:build",
+    "flow": "flow",
     "guard": "npm run lint && npm test",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "eslint src/ --fix",
+    "lint:build": "eslint esm/ --rule 'arrow-spacing: [2, {before: false, after: false}]' --fix",
     "lint": "eslint ./",
     "release": "np",
     "test": "jest"
@@ -33,6 +36,8 @@
     "babel-preset-env": "^1.6.0",
     "eslint": "^4.13.1",
     "eslint-config-devine": "^1.7.1",
+    "flow-bin": "^0.63.1",
+    "flow-remove-types": "^1.2.3",
     "husky": "^0.15.0-beta.16",
     "jest": "^21.1.0",
     "np": "^2.18.3"

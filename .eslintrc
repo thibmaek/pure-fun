@@ -12,24 +12,6 @@
     "sort-keys": [
       "error"
     ],
-    "require-jsdoc": [
-      "error",
-      {
-        "require": {
-          "ArrowFunctionExpression": true,
-          "ClassDeclaration": false,
-          "FunctionDeclaration": true,
-          "FunctionExpression": true,
-          "MethodDefinition": true
-        }
-      }
-    ],
-    "valid-jsdoc": [
-      "error",
-      {
-        "requireParamDescription": true,
-        "requireReturnDescription": false
-      }
-    ]
+    "arrow-spacing": ["error", {"before": true, "after": true}]
   }
 }
