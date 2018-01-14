@@ -3,7 +3,8 @@
     "test": {
       "plugins": ["transform-runtime"],
       "presets": [
-        ["env", { "targets": { "node": "current" } }]
+        ["env", { "targets": { "node": "current" } }],
+        "flow",
       ]
     }
   }
