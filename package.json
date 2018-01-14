@@ -4,11 +4,11 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
-    "build": "flow-remove-types src/ -d esm/ && npm run lint:build",
+    "build": "flow-remove-types --pretty src/ -d esm/ && npm run lint:build",
     "flow": "flow",
     "guard": "npm run lint && npm test",
     "lint:fix": "eslint src/ --fix",
-    "lint:build": "eslint esm/ --rule 'arrow-spacing: [2, {before: false, after: false}]' --fix",
+    "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
     "release": "np",
     "test": "jest"

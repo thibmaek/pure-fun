@@ -5,12 +5,12 @@ const str = `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
 const truncDefault = `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore`;
 const trunc30 = `Lorem ipsum dolor sit amet, co`;
 
-describe(`[Strings]: ellipsize`, ()=>{
-  it(`should ellipsize the string if it reaches more than 100 chars`, ()=>{
+describe(`[Strings]: ellipsize`, () => {
+  it(`should ellipsize the string if it reaches more than 100 chars`, () => {
     expect(trunc(str)).toEqual(`${truncDefault}…`);
   });
 
-  it(`should ellepsize the string if it reaches the given max chars`, ()=>{
+  it(`should ellepsize the string if it reaches the given max chars`, () => {
     expect(trunc(str, 30)).toEqual(`${trunc30}…`);
   });
 });

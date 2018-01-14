@@ -9,7 +9,7 @@
 export default function forEach(arr, fn, cb, i) {
   if (typeof i === `undefined`) i = 0;
   if (arr[i]) {
-    fn(arr[i], ()=>{
+    fn(arr[i], () => {
       forEach(arr, fn, cb, i + 1);
     });
   } else {

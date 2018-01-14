@@ -1,10 +1,10 @@
 /**
- *      
+ * 
  * Take the median out of an array
  * @param  {Array<Number>} arr array consisting of numbers
  * @return {Number} the median in the array
  */
-export default arr=>{
+export default arr => {
   const a = arr.sort();
   const idx = (a.length / 2).toFixed(0);
 

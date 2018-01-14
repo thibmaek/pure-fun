@@ -1,8 +1,8 @@
 /**
- *      
+ * 
  * Safely try to parse JSON
  */
-export default json=>{
+export default json => {
   try {
     return JSON.parse(json);
   } catch (e) {

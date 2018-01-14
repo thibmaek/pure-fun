@@ -8,22 +8,22 @@ const records = [
 ];
 
 const groupByFormat = {
-  single: [...records.filter(r=>r.format === `single`)],
-  lp: [...records.filter(r=>r.format === `lp`)],
+  single: [...records.filter(r => r.format === `single`)],
+  lp: [...records.filter(r => r.format === `lp`)],
 };
 
-describe(`[Arrays]: groupBy`, ()=>{
-  it(`should group the objects by given key`, ()=>{
+describe(`[Arrays]: groupBy`, () => {
+  it(`should group the objects by given key`, () => {
     expect(groupBy(records, `format`)).toEqual(groupByFormat);
   });
 
-  it(`should return an Object, not an Array`, ()=>{
+  it(`should return an Object, not an Array`, () => {
     expect(groupBy(records, `format`)).toBeInstanceOf(Object);
     expect(typeof groupBy(records, `format`)).toBe(`object`);
     expect(Array.isArray(groupBy(records, `format`))).toBe(false);
   });
 
-  it(`should group as key 'undefined' when given key is missing`, ()=>{
+  it(`should group as key 'undefined' when given key is missing`, () => {
     const copyRecords = [...records, { title: `Missing format` }];
     expect(groupBy(copyRecords, `format`)).toEqual({
       ...groupByFormat,
