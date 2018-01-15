@@ -1,15 +1,15 @@
 import groupBy from '../groupBy';
 
 const records = [
-  { format: `lp`, title: `A Moon Shaped Pool`, artist: `Radiohead` },
-  { format: `lp`, title: `Elaenia`, artist: `Floating Points` },
-  { format: `single`, title: `The 4th Verdict`, artist: `Answer Code Request` },
-  { format: `single`, title: `Klockworks 10`, artist: `Etapp Kyle` },
+  { artist: `Radiohead`, format: `lp`, title: `A Moon Shaped Pool` },
+  { artist: `Floating Points`, format: `lp`, title: `Elaenia` },
+  { artist: `Answer Code Request`, format: `single`, title: `The 4th Verdict` },
+  { artist: `Etapp Kyle`, format: `single`, title: `Klockworks 10` },
 ];
 
 const groupByFormat = {
-  single: [...records.filter(r => r.format === `single`)],
   lp: [...records.filter(r => r.format === `lp`)],
+  single: [...records.filter(r => r.format === `single`)],
 };
 
 describe(`[Arrays]: groupBy`, () => {

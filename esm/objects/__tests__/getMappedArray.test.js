@@ -10,26 +10,20 @@ function isIterable(obj) {
   return typeof obj[Symbol.iterator] === `function`;
 }
 
+const obj = { a: 1, b: 2, c: 3 };
+
 describe(`[Objects]: getMappedArray`, () => {
   it(`should return a iterable array of tuples from an input object`, () => {
-    const originalObject = {
-      one: 4,
-      two: 5,
-      three: 6,
-    };
+    const mappedArray = getMappedArray(obj);
 
-    // mappedArray should equal [ [ 'one', 4 ], [ 'two', 5 ], [ 'three', 6 ] ]
-    const mappedArray = getMappedArray(originalObject);
-
-    // Pulling the keys and values out of the object for checks
-    const originalObjectKeys = Object.keys(originalObject);
-    const originalObjectValues = Object.values(originalObject);
+    const originalObjectKeys = Object.keys(obj);
+    const originalObjectValues = Object.values(obj);
 
     expect(isIterable(mappedArray)).toEqual(true);
 
-    mappedArray.map((tuple, index) => {
-      expect(tuple[0]).toEqual(originalObjectKeys[index]);
-      expect(tuple[1]).toEqual(originalObjectValues[index]);
+    mappedArray.map(([id, val], idx) => {
+      expect(id).toEqual(originalObjectKeys[idx]);
+      expect(val).toEqual(originalObjectValues[idx]);
     });
   });
 });

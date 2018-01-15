@@ -1,19 +1,19 @@
 import sortBy from '../sortBy';
 
 const arr = [
-  { val: 1, name: `Nina Kraviz` },
-  { val: 3, name: `Answer Code Request` },
-  { val: 2, name: `Cleric` },
+  { name: `Nina Kraviz`, val: 1 },
+  { name: `Answer Code Request`, val: 3 },
+  { name: `Cleric`, val: 2 },
 ];
 const arrByVal = [
-  { val: 1, name: `Nina Kraviz` },
-  { val: 2, name: `Cleric` },
-  { val: 3, name: `Answer Code Request` },
+  { name: `Nina Kraviz`, val: 1 },
+  { name: `Cleric`, val: 2 },
+  { name: `Answer Code Request`, val: 3 },
 ];
 const arrByName = [
-  { val: 3, name: `Answer Code Request` },
-  { val: 2, name: `Cleric` },
-  { val: 1, name: `Nina Kraviz` },
+  { name: `Answer Code Request`, val: 3 },
+  { name: `Cleric`, val: 2 },
+  { name: `Nina Kraviz`, val: 1 },
 ];
 
 describe(`[Arrays]: sortBy`, () => {
