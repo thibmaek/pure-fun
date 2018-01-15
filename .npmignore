@@ -3,7 +3,7 @@
 
 src/
 types/
-__tests__/
+__tests__
 
 .babelrc
 .eslintrc
