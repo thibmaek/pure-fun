@@ -8,9 +8,8 @@ describe(`[Sets]: intersect`, () => {
     expect(intersect(set1, set2)).toEqual(new Set([1, 4]));
   });
 
-  it(`should be a Set not Array or object-like`, () => {
+  it(`should be a Set and not an array`, () => {
     expect(intersect(set1, set2)).toBeInstanceOf(Set);
     expect(intersect(set1, set2)).not.toBeInstanceOf(Array);
-    expect(intersect(set1, set2)).not.toBeInstanceOf(Object);
   });
 });

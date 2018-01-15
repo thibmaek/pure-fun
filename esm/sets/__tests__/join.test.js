@@ -8,9 +8,8 @@ describe(`[Sets]: join`, () => {
     expect(join(set1, set2)).toEqual(new Set([1, 2, 3, 4, 5, 6, 7, 8]));
   });
 
-  it(`should be a Set not Array or object-like`, () => {
+  it(`should be a Set not an Array`, () => {
     expect(join(set1, set2)).toBeInstanceOf(Set);
     expect(join(set1, set2)).not.toBeInstanceOf(Array);
-    expect(join(set1, set2)).not.toBeInstanceOf(Object);
   });
 });

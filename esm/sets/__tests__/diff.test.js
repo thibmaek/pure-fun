@@ -8,9 +8,8 @@ describe(`[Sets]: diff`, () => {
     expect(diff(set1, set2)).toEqual(new Set([2, 3]));
   });
 
-  it(`should be a Set not Array or object-like`, () => {
+  it(`should be a Set not an Array`, () => {
     expect(diff(set1, set2)).toBeInstanceOf(Set);
     expect(diff(set1, set2)).not.toBeInstanceOf(Array);
-    expect(diff(set1, set2)).not.toBeInstanceOf(Object);
   });
 });
