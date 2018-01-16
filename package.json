@@ -38,7 +38,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.13.1",
-    "eslint-config-devine": "^1.7.1",
+    "eslint-config-thibmaek": "1.0.2",
     "flow-bin": "^0.63.1",
     "flow-coverage-report": "^0.4.0",
     "flow-remove-types": "^1.2.3",
