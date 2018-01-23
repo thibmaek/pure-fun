@@ -4,8 +4,12 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
+    "build": "flow-remove-types --pretty src/ -d esm/ && npm run lint:build",
+    "flow": "flow",
+    "flow:coverage": "flow-coverage-report",
     "guard": "npm run lint && npm test",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "eslint src/ --fix",
+    "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
     "release": "np",
     "test": "jest"
@@ -20,7 +24,8 @@
     "fp",
     "helper",
     "util",
-    "pure-functions"
+    "pure-functions",
+    "flowtype"
   ],
   "author": "Thibault Maekelbergh",
   "license": "MIT",
@@ -31,8 +36,12 @@
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.13.1",
     "eslint-config-thibmaek": "1.0.2",
+    "flow-bin": "^0.63.1",
+    "flow-coverage-report": "^0.4.0",
+    "flow-remove-types": "^1.2.3",
     "husky": "^0.15.0-beta.16",
     "jest": "^21.1.0",
     "np": "^2.18.3"
@@ -42,5 +51,8 @@
       "precommit": "npm run guard",
       "prepush": "npm test"
     }
+  },
+  "flow-coverage-report": {
+    "includeGlob": ["src/**/*.js"]
   }
 }

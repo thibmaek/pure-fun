@@ -1,10 +1,15 @@
 language: node_js
+
 node_js:
 - lts/*
+
 script: npm run test
+after_script: npm run flow:coverage
+
 cache:
   directories:
   - node_modules
+
 deploy:
   provider: npm
   email: thibault.maekelbergh@icloud.com
