@@ -1,6 +1,11 @@
-__tests__
 .github
+.vscode
+
+src/
+types/
+__tests__
 
 .babelrc
 .eslintrc
+.flowconfig
 .travis.yml

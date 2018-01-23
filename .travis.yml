@@ -1,15 +1,23 @@
 language: node_js
+
 node_js:
 - lts/*
+
+
 before_install:
-- '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest' # Make sure to use lockfile (npm@5) for Node < v9
-- npm install -g greenkeeper-lockfile@1
+  - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest' # Make sure to use lockfile (npm@5) for Node < v9
+  - npm install -g greenkeeper-lockfile@1
+
 before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
 script: npm run test
+after_script:
+  - greenkeeper-lockfile-upload
+  - npm run flow:coverage
+
 cache:
   directories:
   - node_modules
+
 deploy:
   provider: npm
   email: thibault.maekelbergh@icloud.com
