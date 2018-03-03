@@ -2,6 +2,7 @@ import diff from './diff';
 import filterEven from './filterEven';
 import filterFalsies from './filterFalsies';
 import flatten from './flatten';
+import getDuplicates from './getDuplicates';
 import groupBy from './groupBy';
 import head from './head';
 import initial from './initial';
@@ -22,10 +23,12 @@ import zip from './zip';
 export default {
   diff,
   difference: diff,
+  duplicates: getDuplicates,
   empty: isEmpty,
   filterEven,
   filterFalsies,
   flatten,
+  getDuplicates,
   groupBy,
   head,
   initial,
