@@ -4,3 +4,5 @@ Following people, users, repos, resources and projects have contributed towards 
 * @bendc gists (https://gist.github.com/bendc)
 * https://github.com/timothyverhaeghe/pelicanjs
 * https://lodash.com/
+
+Sorry if I forgot you…
