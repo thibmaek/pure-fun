@@ -1,6 +1,0 @@
-{
-  "hooks": {
-    "precommit": "lint-staged",
-    "prepush": "npm test"
-  }
-}
