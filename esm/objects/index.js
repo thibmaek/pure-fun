@@ -7,6 +7,8 @@ import makeIterable from './makeIterable';
 import parseJSON from './parseJSON';
 import pluckDeep from './pluckDeep';
 
+export { default as deepCopy } from './deepCopy';
+
 export default {
   deepMerge,
   empty: isEmpty,
