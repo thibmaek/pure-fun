@@ -4,7 +4,7 @@
       "plugins": ["transform-runtime"],
       "presets": [
         ["env", { "targets": { "node": "current" } }],
-        "flow",
+        "flow"
       ]
     }
   }

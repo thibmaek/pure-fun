@@ -1,6 +1,7 @@
 {
   "extends": "thibmaek",
   "rules": {
+    "import/prefer-default-export": "off",
     "comma-dangle": [
       "error",
       "always-multiline"
