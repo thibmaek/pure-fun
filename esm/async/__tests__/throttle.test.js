@@ -5,13 +5,14 @@ const THROTTLE_TIME = 4000;
 const PROMISE = new Promise(resolve => resolve({  status: `RESOLVED`  }));
 
 describe(`[Async]: throttle`, () => {
+  beforeAll(() => console.log(`Starting a ${THROTTLE_TIME}ms Promise test...`));
+
   it(`should return a Promise`, () => {
     expect(throttle(THROTTLE_TIME)).toBeInstanceOf(Promise);
     expect(throttle(THROTTLE_TIME, PROMISE)).toBeInstanceOf(Promise);
   });
 
   describe(`should throttle the function`, () => {
-    beforeAll(() => console.log(`Starting a ${THROTTLE_TIME}ms Promise test...`));
     it(`should just wait for given time if no promise is passed`, done => {
       const startTime = process.hrtime();
       const throttledPromise = throttle(500);

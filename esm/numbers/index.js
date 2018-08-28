@@ -1,7 +1,2 @@
-import isEven from './isEven';
-import isNumber from './isNumber';
-
-export default {
-  isEven,
-  isNumber,
-};
+export { default as isEven } from './isEven';
+export { default as isNumber } from './isNumber';

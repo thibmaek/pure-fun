@@ -1,4 +1,4 @@
-//
+// 
 const deepCopy = obj => {
   if (typeof obj === `object` && !Array.isArray(obj)) {
     return Object.keys(obj)

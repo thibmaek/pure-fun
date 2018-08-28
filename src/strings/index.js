@@ -1,12 +1,3 @@
-import capitalize from './capitalize';
-import ellipsize from './ellipsize';
-import isEmpty from './isEmpty';
-
-export default {
-  capitalize,
-  ellipsize,
-  empty: isEmpty,
-  isEmpty,
-  trunc: ellipsize,
-  truncate: ellipsize,
-};
+export { default as capitalize } from './capitalize';
+export { default as ellipsize } from './ellipsize';
+export { default as isEmpty } from './isEmpty';
