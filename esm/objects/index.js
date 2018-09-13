@@ -1,20 +1,9 @@
-import deepMerge from './deepMerge';
-import getMappedArray from './getMappedArray';
-import getQueryString from './getQueryString';
-import isEmpty from './isEmpty';
-import makeImmutable from './makeImmutable';
-import makeIterable from './makeIterable';
-import parseJSON from './parseJSON';
-import pluckDeep from './pluckDeep';
-
-export default {
-  deepMerge,
-  empty: isEmpty,
-  getMappedArray,
-  getQueryString,
-  isEmpty,
-  makeImmutable,
-  makeIterable,
-  parseJSON,
-  pluckDeep,
-};
+export { default as deepCopy } from './deepCopy';
+export { default as deepMerge } from './deepMerge';
+export { default as getMappedArray } from './getMappedArray';
+export { default as getQueryString } from './getQueryString';
+export { default as isEmpty } from './isEmpty';
+export { default as makeImmutable } from './makeImmutable';
+export { default as makeIterable } from './makeIterable';
+export { default as parseJSON } from './parseJSON';
+export { default as pluckDeep } from './pluckDeep';

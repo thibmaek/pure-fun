@@ -1,10 +1,4 @@
-import mapPromise from './mapPromise';
-import sleep from './sleep';
-import throttle from './throttle';
-
-export default {
-  map: mapPromise,
-  sleep,
-  takeAtLeast: throttle,
-  throttle,
-};
+export { default as map } from './mapPromise';
+export { default as forEach } from './forEach';
+export { default as sleep } from './sleep';
+export { default as throttle } from './throttle';

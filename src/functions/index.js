@@ -1,12 +1,4 @@
-import always from './always';
-import compose from './compose';
-import merge from './merge';
-import requireArgs from './requireArgs';
-
-export default {
-  always,
-  compose,
-  converge: merge,
-  merge,
-  requireArgs,
-};
+export { default as always } from './always';
+export { default as compose } from './compose';
+export { default as merge } from './merge';
+export { default as requireArgs } from './requireArgs';

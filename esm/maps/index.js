@@ -1,5 +1,1 @@
-import deepClone from './deepClone';
-
-export default {
-  deepClone,
-};
+export { default as deepClone } from './deepClone';

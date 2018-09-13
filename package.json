@@ -1,13 +1,12 @@
 {
   "name": "pure-fun",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
     "build": "flow-remove-types --pretty src/ -d esm/ && npm run lint:build",
     "flow": "flow",
     "flow:coverage": "flow-coverage-report",
-    "guard": "npm run lint && npm test",
     "lint:fix": "eslint src/ --fix",
     "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
@@ -35,24 +34,21 @@
   "homepage": "https://github.com/thibmaek/pure-fun#readme",
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^4.13.1",
-    "eslint-config-thibmaek": "1.0.2",
-    "flow-bin": "^0.63.1",
-    "flow-coverage-report": "^0.4.0",
+    "eslint": "^5.4.0",
+    "eslint-config-thibmaek": "^1.0.4",
+    "flow-bin": "^0.79.1",
+    "flow-coverage-report": "^0.5.0",
     "flow-remove-types": "^1.2.3",
-    "husky": "^0.15.0-beta.16",
-    "jest": "^21.1.0",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
+    "lint-staged": "^7.2.2",
     "np": "^2.18.3"
   },
-  "husky": {
-    "hooks": {
-      "precommit": "npm run guard",
-      "prepush": "npm test"
-    }
-  },
   "flow-coverage-report": {
-    "includeGlob": ["src/**/*.js"]
+    "includeGlob": [
+      "src/**/*.js"
+    ]
   }
 }

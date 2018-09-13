@@ -1,7 +1,2 @@
-import convertToDateIfNeeded from './convertToDateIfNeeded';
-import isDate from './isDate';
-
-export default {
-  convertToDate: convertToDateIfNeeded,
-  isDate,
-};
+export { default as convertToDateIfNeeded } from './convertToDateIfNeeded';
+export { default as isDate } from './isDate';

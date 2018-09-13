@@ -1,5 +1,1 @@
-import entries from './entries';
-
-export default {
-  entries,
-};
+export { default as entries } from './entries';
