@@ -9,6 +9,7 @@
     <a href="https://www.notion.so/thibmaek/89015d654dbf4600acf001dbe229fb38?v=b5d231eef3a84993b16abca0a120b04e">
       <img src="https://img.shields.io/badge/check-our%20roadmap-5362F5.svg" alt="Chat">
     </a>
+    <img src="https://badges.greenkeeper.io/thibmaek/pure-fun.svg" />
   </p>
 
   <blockquote>Currently ESM support only, use Babel or @std/esm (node v8+) for Node.</blockquote>
