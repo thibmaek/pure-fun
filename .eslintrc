@@ -12,6 +12,9 @@
     ],
     "sort-keys": [
       "error"
-    ]
+    ],
+  },
+  "globals": {
+    "RequestOptions": true
   }
 }
