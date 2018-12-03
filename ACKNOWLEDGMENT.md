@@ -5,5 +5,6 @@ Following people, users, repos, resources and projects have contributed towards 
 * https://github.com/timothyverhaeghe/pelicanjs
 * https://lodash.com/
 * https://twitter.com/wesbos/status/1063515277911052290
+* https://twitter.com/wesbos/status/1067534197903056901
 
 Sorry if I forgot you…
