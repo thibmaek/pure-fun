@@ -38,7 +38,7 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^5.4.0",
     "eslint-config-thibmaek": "^1.0.4",
-    "flow-bin": "^0.87.0",
+    "flow-bin": "^0.95.0",
     "flow-coverage-report": "^0.5.0",
     "flow-remove-types": "^1.2.3",
     "husky": "^1.0.1",
