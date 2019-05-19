@@ -1,8 +1,14 @@
 /**
- * @flow
- * Make on object iterable (through generator fn)
+ * Creates a new IterableIterator object from the original
  */
-export default function* (obj: Object) {
-  yield* Object.keys(obj).map(key => [key, obj[key]]);
+// export default function* (obj) {
+//   yield* Object.keys(obj).map(key => [key, obj[key]]);
+//   return obj;
+// }
+export default obj => {
+  console.log(`
+    This function is currently not implemented and will just return the original object.
+    https://github.com/developit/microbundle/issues/319
+  `);
   return obj;
-}
+};
