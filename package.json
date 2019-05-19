@@ -2,9 +2,14 @@
   "name": "pure-fun",
   "version": "1.14.0",
   "description": "A collection of pure functions/helpers with 0 dependencies",
-  "main": "index.js",
+  "main": "dist/pure-fun.js",
+  "module": "dist/pure-fun.mjs",
+  "unpkg": "dist/pure-fun.umd.js",
+  "source": "src/index.ts",
+  "typings": "dist/pure-fun.d.ts",
   "scripts": {
-    "build": "",
+    "build": "microbundle",
+    "start": "microbundle watch",
     "lint:fix": "eslint src/ --fix",
     "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
@@ -36,6 +41,7 @@
     "husky": "^1.0.1",
     "jest": "^23.5.0",
     "lint-staged": "^8.0.0",
+    "microbundle": "^0.11.0",
     "np": "^2.18.3"
   }
 }
