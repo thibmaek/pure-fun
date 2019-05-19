@@ -4,9 +4,7 @@
   "description": "A collection of pure functions/helpers with 0 dependencies",
   "main": "index.js",
   "scripts": {
-    "build": "flow-remove-types --pretty src/ -d esm/ && npm run lint:build",
-    "flow": "flow",
-    "flow:coverage": "flow-coverage-report",
+    "build": "",
     "lint:fix": "eslint src/ --fix",
     "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
@@ -33,22 +31,11 @@
   },
   "homepage": "https://github.com/thibmaek/pure-fun#readme",
   "devDependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
     "eslint": "^5.4.0",
     "eslint-config-thibmaek": "^1.0.4",
-    "flow-bin": "^0.87.0",
-    "flow-coverage-report": "^0.5.0",
-    "flow-remove-types": "^1.2.3",
     "husky": "^1.0.1",
     "jest": "^23.5.0",
     "lint-staged": "^8.0.0",
     "np": "^2.18.3"
-  },
-  "flow-coverage-report": {
-    "includeGlob": [
-      "src/**/*.js"
-    ]
   }
 }
