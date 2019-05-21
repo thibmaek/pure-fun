@@ -15,6 +15,7 @@
     "lint": "eslint ./",
     "release": "np",
     "test": "jest",
+    "test:watch": "jest --watch",
     "update": "npm-check -u -E --production",
     "update:dev": "npm-check -u -E --dev-only"
   },
@@ -29,7 +30,7 @@
     "helper",
     "util",
     "pure-functions",
-    "flowtype"
+    "typescript"
   ],
   "author": "Thibault Maekelbergh",
   "license": "MIT",
