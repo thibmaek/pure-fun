@@ -1,7 +1,0 @@
-/**
- * Ellipsize a string at given character length.
- * Defaults to the 100th character.
- * An optional third argument can be provided to use the unicode ellepsis character or just three dots
- */
-export default (str: string, max = 100, useUnicodeEllipsis = true) =>
-  `${str.substring(0, max)}${useUnicodeEllipsis ? '…' : '...'}`;
