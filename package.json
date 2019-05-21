@@ -14,7 +14,9 @@
     "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
     "release": "np",
-    "test": "jest"
+    "test": "jest",
+    "update": "npm-check -u -E --production",
+    "update:dev": "npm-check -u -E --dev-only"
   },
   "repository": {
     "type": "git",
@@ -42,6 +44,7 @@
     "jest": "^23.5.0",
     "lint-staged": "^8.0.0",
     "microbundle": "^0.11.0",
-    "np": "^2.18.3"
+    "np": "^2.18.3",
+    "npm-check": "^5.9.0"
   }
 }
