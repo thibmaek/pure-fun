@@ -2,9 +2,9 @@ import mergeDeep from '.';
 
 const obj1 = { a: 1 };
 const obj2 = { b: 2 };
-const obj3 = { c: [2] };
+const obj3 = { c: [2], d: { e: 3 } };
 
-const result = { a: 1, b: 2, c: [2] };
+const result = { a: 1, b: 2, c: [2], d: { e: 3 } };
 
 describe(`[Objects]: deepMerge`, () => {
   it(`should deeply merge a series of objects`, () => {
