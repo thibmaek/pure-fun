@@ -6,10 +6,10 @@ describe(`[Objects]: isObject`, () => {
     expect(isObject({ a: 2 })).toBe(true);
     expect(isObject(Object())).toBe(true);
     expect(isObject(Object({ a: 2 }))).toBe(true);
-    expect(isObject(new Date())).toBe(true);
   });
 
   it(`should detect invalid objects`, () => {
+    expect(isObject(new Date())).toBe(false);
     expect(isObject(() => {})).toBe(false);
     expect(isObject(3)).toBe(false);
     expect(isObject(`string`)).toBe(false);
