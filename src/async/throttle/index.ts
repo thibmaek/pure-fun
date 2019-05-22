@@ -1,11 +1,11 @@
-import sleep from '../sleep';
-
 /**
  * Throttles the input promise for a given amount of miliseconds
  */
-const throttle = (promise: Promise<any>, ms = 0) => new Promise(
+const throttle = (ms: number, promise: Promise<any>) => new Promise(
   async (resolve, reject) => {
-    if (!promise) return resolve(await sleep(ms));
+    const sleep = new Promise(resolve => setTimeout(resolve, ms));
+
+    if (!promise) return resolve(await sleep);
 
     try {
       const [res] = await Promise.all([promise, sleep]);

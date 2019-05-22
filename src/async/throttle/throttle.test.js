@@ -1,7 +1,7 @@
 import throttle from '.';
 
 const THROTTLE_TIME = 4000;
-const PROMISE = new Promise(resolve => resolve({  status: `RESOLVED`  }));
+const PROMISE = new Promise(resolve => resolve({ status: `RESOLVED` }));
 
 describe(`[Async]: throttle`, () => {
   beforeAll(() => console.log(`Starting a ${THROTTLE_TIME}ms Promise test...`));
@@ -26,7 +26,7 @@ describe(`[Async]: throttle`, () => {
       });
     });
 
-    it(`should return the given promise after specified time`, async done => {
+    it(`should return the given promise after specified time`, done => {
       const startTime = process.hrtime();
 
       const throttledPromise = throttle(THROTTLE_TIME, PROMISE);
@@ -36,7 +36,7 @@ describe(`[Async]: throttle`, () => {
 
         expect(seconds).toBeLessThan(5);
         expect(seconds).toBeGreaterThanOrEqual(4);
-        expect(data).toMatchObject({  status: `RESOLVED`  });
+        expect(data).toMatchObject({ status: `RESOLVED` });
         done();
       });
     });
