@@ -1,17 +1,23 @@
 {
   "name": "pure-fun",
-  "version": "1.14.0",
+  "version": "2.0.0",
   "description": "A collection of pure functions/helpers with 0 dependencies",
-  "main": "index.js",
+  "main": "dist/pure-fun.js",
+  "module": "dist/pure-fun.mjs",
+  "unpkg": "dist/pure-fun.umd.js",
+  "source": "src/index.ts",
+  "typings": "dist/pure-fun.d.ts",
   "scripts": {
-    "build": "flow-remove-types --pretty src/ -d esm/ && npm run lint:build",
-    "flow": "flow",
-    "flow:coverage": "flow-coverage-report",
+    "build": "microbundle",
+    "start": "microbundle watch",
     "lint:fix": "eslint src/ --fix",
     "lint:build": "eslint esm/ --fix",
     "lint": "eslint ./",
     "release": "np",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "update": "npm-check -u -E --production",
+    "update:dev": "npm-check -u -E --dev-only"
   },
   "repository": {
     "type": "git",
@@ -24,7 +30,7 @@
     "helper",
     "util",
     "pure-functions",
-    "flowtype"
+    "typescript"
   ],
   "author": "Thibault Maekelbergh",
   "license": "MIT",
@@ -33,22 +39,17 @@
   },
   "homepage": "https://github.com/thibmaek/pure-fun#readme",
   "devDependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.4.0",
     "eslint-config-thibmaek": "^1.0.4",
-    "flow-bin": "^0.87.0",
-    "flow-coverage-report": "^0.5.0",
-    "flow-remove-types": "^1.2.3",
     "husky": "^1.0.1",
-    "jest": "^23.5.0",
+    "jest": "24.8.0",
     "lint-staged": "^8.0.0",
-    "np": "^2.18.3"
-  },
-  "flow-coverage-report": {
-    "includeGlob": [
-      "src/**/*.js"
-    ]
+    "microbundle": "^0.11.0",
+    "np": "^2.18.3",
+    "npm-check": "^5.9.0"
   }
 }
