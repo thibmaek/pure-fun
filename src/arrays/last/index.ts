@@ -1,3 +1,5 @@
-// TODO: doc!
-const last = (arr: any[]): any => arr.slice(- 1)[0];
+/**
+ * Returns the last item in the input array
+ */
+const last = <T>(arr: T[]): any => arr.slice(- 1)[0];
 export default last

@@ -4,5 +4,5 @@ const _duplicates = dict => Object.keys(dict).filter(a => dict[a] > 1);
 /**
  * Returns an array of values that are duplicate in the input array.
  */
-const duplicates = (arr: any[]) => _duplicates(_count(arr));
+const duplicates = <T>(arr: T[]) => _duplicates(_count(arr));
 export default duplicates;

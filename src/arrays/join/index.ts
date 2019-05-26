@@ -3,5 +3,5 @@
  * This will created nested array structure!
  * For flat array structure use pure-fun/arrays/flatten
  */
-const join = (...arrs: any[]) => [...arrs];
+const join = <T>(...arrs: T[]) => [...arrs];
 export default join;
